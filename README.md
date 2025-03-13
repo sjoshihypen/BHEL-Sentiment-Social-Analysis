@@ -78,9 +78,9 @@ If you like this project, don't forget to give it a ⭐ on GitHub!
 
 🔗**Connect With Us:** 
 
-<a href="https://www.facebook.com/BHELOfficial/" target="_blank">
+<a href="https://www.facebook.com/BHELOfficial/">
         <img src="https://github.com/user-attachments/assets/ec0d669d-10ec-4079-82f5-b8c86f7c4dc0" width="20"/>
-        LinkedIn
+        Facebook
     </a>  
     &nbsp;&nbsp;
 
