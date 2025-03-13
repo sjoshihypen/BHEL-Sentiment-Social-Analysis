@@ -1,6 +1,6 @@
 # BHEL | Social Sentiment Analysis
 
-## 🔍 AI-Powered Insights for Social Media Engagement
+##  AI-Powered Insights for Social Media Engagement
 
 <p align="center">
     <img id="slideshow" src="./Images/BHEL_Cover.png" width="800" height="400">
