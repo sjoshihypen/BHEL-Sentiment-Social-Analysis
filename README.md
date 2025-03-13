@@ -83,7 +83,13 @@ If you like this project, don't forget to give it a ⭐ on GitHub!
         Facebook
     </a>  
     &nbsp;&nbsp;
-
+    
+<a href="https://www.instagram.com/bhel.india/?hl=en">
+        <img src="![image](https://github.com/user-attachments/assets/e43e1be8-6e79-41d0-bea7-1b8f68c58424)" width="20"/>
+        Instagram
+    </a>  
+    &nbsp;&nbsp;
+    
 <a href="https://www.linkedin.com/company/bhel/" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"/>
         LinkedIn
