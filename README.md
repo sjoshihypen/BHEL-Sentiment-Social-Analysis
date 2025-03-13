@@ -27,6 +27,7 @@ Track likes, shares, and comments on LinkedIn posts. Get a detailed sentiment br
 Gain deep insights with interactive visualizations! Our platform generates bar charts, pie charts, and trend graphs to showcase sentiment trends, engagement levels, and audience behavior in an easy-to-understand format.
 
 **6. 📁 Downloadable CSV Reports**
+
 Export sentiment analysis results and engagement metrics into CSV files. This feature allows businesses to maintain records, conduct in-depth studies, and use the data for future strategies and reporting.
 
 ##  🛠 Installation Guide 
