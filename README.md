@@ -1,5 +1,4 @@
 # BHEL | Social Sentiment Analysis
-
 ![BHEL Sentiment Analysis](./Images/BHEL_Cover.png)
 
 ## Overview
