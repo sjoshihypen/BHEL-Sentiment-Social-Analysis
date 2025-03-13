@@ -20,7 +20,7 @@ Our AI-powered tool scans post comments to determine sentiment—**Positive**, *
 
 **4. 📊 Customizable Analysis Periods**
 
-Users can choose from three analysis periods: weekly (7 days), monthly (30 days), or yearly (365 days) to get insights based on their needs, ensuring a flexible and customized sentiment analysis experience.
+Users can choose from three analysis periods: **Weekly (7 days)**, **Monthly (30 days)**, or **Yearly (365 days)** to get insights based on their needs, ensuring a flexible and customized sentiment analysis experience.
 
 **5. 📉 Visualizations with Graphs & Charts**
 
