@@ -78,6 +78,12 @@ If you like this project, don't forget to give it a ⭐ on GitHub!
 
 🔗**Connect With Us:** 
 
+<a href="https://www.facebook.com/BHELOfficial/" target="_blank">
+        <img src="https://github.com/user-attachments/assets/ec0d669d-10ec-4079-82f5-b8c86f7c4dc0" width="20"/>
+        LinkedIn
+    </a>  
+    &nbsp;&nbsp;
+
 <a href="https://www.linkedin.com/company/bhel/" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"/>
         LinkedIn
