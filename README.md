@@ -47,15 +47,15 @@ Export sentiment analysis results and engagement metrics into CSV files. This fe
 ```
 
 ## 🗄 Database Configuration
-### **SQLite for Visitor Count**
+**1. SQLite for Visitor Count**
 - The project uses SQLite to maintain a visitor count.
 - The database file is created automatically if not present.
 
-### **MySQL for User Authentication**
+**2. MySQL for User Authentication**
 - Update the `st.secrets` configuration with your MySQL database credentials.
 - MySQL is used to manage user registration and login.
 
-## 📌 Technologies Used
+## Tech Stack
 - **Python** 🐍
 - **Streamlit** 🌐
 - **SQLite** 🗃️ (Visitor Count)
