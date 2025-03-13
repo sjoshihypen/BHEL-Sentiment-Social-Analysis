@@ -44,7 +44,7 @@ Export sentiment analysis results and engagement metrics into CSV files. This fe
 
 **3. Run the Application**
 ```bash
-   streamlit run app.py
+   streamlit run 🏡Home.py
 ```
 
 ## 🗄 Database Configuration  
