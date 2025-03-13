@@ -2,10 +2,11 @@
 
 ![BHEL Sentiment Analysis](./Images/BHEL_Cover.png)
 
-**🚀 Overview**
+## Overview
 BHEL Social Sentiment Analysis is a Streamlit web application that analyzes social media posts about **Bharat Heavy Electricals Limited (BHEL)**. It assists users in comprehending public opinion by scraping and analyzing LinkedIn post comments. The application features secure authentication, a contact system, and a visitor counter to monitor engagement. With its user-friendly intuitive interface, interactive image sliders, and granular sentiment analysis, this tool simplifies tracking and visualizing what people say about BHEL on social media.
 
-**🏗 Features**
+## 🏗 Features
+
 **1. ✅ Secure Authentication (Stored in Streamlit Secrets)**
 
 Enjoy a secure and seamless login experience with credentials stored in Streamlit Secrets. This ensures your authentication data remains safe, encrypted, and private from external breaches, making the platform highly secure for all users.
