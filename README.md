@@ -1,11 +1,33 @@
 # BHEL | Social Sentiment Analysis
 
-![BHEL Sentiment Analysis](./Images/BHEL_Cover.png)
+## 🔍 AI-Powered Insights for Social Media Engagement
 
-## 🚀 Overview
-BHEL Social Sentiment Analysis is a Streamlit-based web application that provides sentiment analysis of social media content related to **Bharat Heavy Electricals Limited (BHEL)**. The platform offers user authentication, a contact system, a visitor counter, and a seamless UI with image sliders.
+<p align="center">
+    <img id="slideshow" src="./Images/BHEL_Cover.png" width="800" height="400">
+</p>
 
-## 🏗 Features
+<script>
+    let images = [
+        "./Images/BHEL_Cover.png",
+        "./Images/BHEL_Cover1.png",
+        "./Images/BHEL_Cover2.png",
+        "./Images/BHEL_Cover3.png",
+        "./Images/BHEL_Cover4.png",
+        "./Images/BHEL_Cover5.png"
+    ];
+    let index = 0;
+
+    function changeImage() {
+        document.getElementById("slideshow").src = images[index];
+        index = (index + 1) % images.length;
+    }
+
+    setInterval(changeImage, 3000);
+</script>
+
+---
+
+## 🚀 Features
 
 ## ✅ Secure Authentication (Stored in Streamlit Secrets)
 
@@ -31,61 +53,31 @@ Gain deep insights with interactive visualizations! Our platform generates bar c
 
 Export sentiment analysis results and engagement metrics into CSV files. This feature allows businesses to maintain records, conduct in-depth studies, and use the data for future strategies and reporting.
 
-## 📸 Screenshots
-### 🎭 **Homepage**
-![Homepage](./Images/BHEL_Cover1.png)
+---
 
-### 📊 **Sentiment Analysis Dashboard**
-![Sentiment Analysis](./Images/BHEL_Cover2.png)
-
-### 🔒 **User Authentication**
-![Login Page](./Images/BHEL_Cover3.png)
-
-## 🛠 Installation Guide
-### 1️⃣ **Clone the Repository**
-```bash
-   git clone https://github.com/your-repo/BHEL-Sentiment-Analysis.git
-   cd BHEL-Sentiment-Analysis
-```
-
-### 2️⃣ **Install Dependencies**
-```bash
-   pip install -r requirements.txt
-```
-
-### 3️⃣ **Run the Application**
-```bash
-   streamlit run app.py
-```
-
-## 🗄 Database Configuration
-### **SQLite for Visitor Count**
-- The project uses SQLite to maintain a visitor count.
-- The database file is created automatically if not present.
-
-### **MySQL for User Authentication**
-- Update the `st.secrets` configuration with your MySQL database credentials.
-- MySQL is used to manage user registration and login.
-
-## 📌 Technologies Used
-- **Python** 🐍
-- **Streamlit** 🌐
-- **SQLite** 🗃️ (Visitor Count)
-- **MySQL** 🛢️ (User Authentication)
-
-## 🤝 Contributing
-We welcome contributions! If you’d like to contribute:
-1. Fork the repository 📌
-2. Create a new branch 🌿
-3. Commit your changes 🔥
-4. Open a pull request ✅
-
-## 📄 License
-This project is **open-source** and available under the **MIT License**.
+## 🎯 How It Works?
+1. **Login or Sign Up** securely.
+2. **Enter a LinkedIn Post URL** to start the analysis.
+3. **AI Scrapes & Analyzes Comments** in real time.
+4. **View Visual Reports** with sentiment trends and engagement statistics.
+5. **Download Reports** as CSV files.
 
 ---
-### ⭐ **Show some love!**
-If you like this project, don't forget to give it a ⭐ on GitHub!
 
-🔗 Connect with us: [LinkedIn](https://linkedin.com) | [Twitter](https://twitter.com)
+## 📌 Technologies Used
+- **Python + Streamlit**
+- **MySQL Database**
+- **NLP & AI Sentiment Analysis**
+- **Data Visualization (Matplotlib, Seaborn, Plotly)**
 
+---
+
+## 📞 Contact Us
+For inquiries, reach out via:
+📧 Email: `contact@bhel.ai`  
+🌐 Website: [www.bhel.ai](https://www.bhel.ai)  
+📱 Phone: `+91-9876543210`  
+
+---
+
+🚀 **BHEL Social Sentiment Analysis** | AI-Powered Insights for Smarter Decision-Making!  
