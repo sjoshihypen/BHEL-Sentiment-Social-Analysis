@@ -18,9 +18,9 @@ Automatically collect Different Social Media Platforms posts related to BHEL and
 
 Our AI-powered tool scans post comments to determine sentiment—**Positive**, **Neutral**, or **Negative**. This analysis helps identify public opinion and provides insights into the brand’s reputation and user engagement levels.
 
-**4. 📊 Engagement Statistics & Sentiment Breakdown**
+**4. 📊 Customizable Analysis Periods**
 
-Track likes, shares, and comments on LinkedIn posts. Get a detailed sentiment breakdown to measure audience perception, making it easier to adjust marketing strategies and boost engagement.
+Users can choose from three analysis periods: weekly (7 days), monthly (30 days), or yearly (365 days) to get insights based on their needs, ensuring a flexible and customized sentiment analysis experience.
 
 **5. 📉 Visualizations with Graphs & Charts**
 
