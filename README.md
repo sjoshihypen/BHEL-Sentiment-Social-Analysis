@@ -6,30 +6,30 @@ BHEL Social Sentiment Analysis is a Streamlit web application that analyzes soci
 
 ## 🏗 Features
 
-**1. ✅ Secure Authentication (Stored in Streamlit Secrets)**
+**1. Secure Authentication (Stored in Streamlit Secrets) ✅**
 
 Enjoy a secure and seamless login experience with credentials stored in Streamlit Secrets. This ensures your authentication data remains safe, encrypted, and private from external breaches, making the platform highly secure for all users.
 
-**2. 🔍 Scrape Different Social Media Platforms Posts & Videos**
+**2. Scrape Different Social Media Platforms Posts & Videos 🔍**
 
 Automatically collect Different Social Media Platforms posts related to BHEL and analyze public engagement. Stay updated on industry trends, user opinions, and brand sentiment, helping businesses make data-driven decisions in real time.
 
-**3. 💬 Extract Comments & Perform Sentiment Analysis**
+**3. Extract Comments & Perform Sentiment Analysis 💬**
 
 Our AI-powered tool scans post comments to determine sentiment—positive, neutral, or negative. This analysis helps identify public opinion and provides insights into the brand’s reputation and user engagement levels.
 
-**4. 📊 Engagement Statistics & Sentiment Breakdown**
+**4. Engagement Statistics & Sentiment Breakdown 📊**
 
 Track likes, shares, and comments on LinkedIn posts. Get a detailed sentiment breakdown to measure audience perception, making it easier to adjust marketing strategies and boost engagement.
 
-**5. 📉 Visualizations with Graphs & Charts**
+**5. Visualizations with Graphs & Charts 📉**
 
 Gain deep insights with interactive visualizations! Our platform generates bar charts, pie charts, and trend graphs to showcase sentiment trends, engagement levels, and audience behavior in an easy-to-understand format.
 
-**6. 📁 Downloadable CSV Reports**
+**6.  Downloadable CSV Reports 📁**
 Export sentiment analysis results and engagement metrics into CSV files. This feature allows businesses to maintain records, conduct in-depth studies, and use the data for future strategies and reporting.
 
-## 🛠 Installation Guide
+##  Installation Guide 🛠
 **1. Clone the Repository**
 ```bash
    git clone https://github.com/your-repo/BHEL-Sentiment-Analysis.git
@@ -46,7 +46,7 @@ Export sentiment analysis results and engagement metrics into CSV files. This fe
    streamlit run app.py
 ```
 
-## 🗄 Database Configuration
+## Database Configuration 🗄 
 **1. SQLite for Visitor Count**
 - The project uses SQLite to maintain a visitor count.
 - The database file is created automatically if not present.
@@ -55,7 +55,7 @@ Export sentiment analysis results and engagement metrics into CSV files. This fe
 - Update the `st.secrets` configuration with your MySQL database credentials.
 - MySQL is used to manage user registration and login.
 
-## Tech Stack
+## Tech Stack Used 👨‍💻
 - **Python + Streamlit**
 - **MySQL Database**
 - **NLP & AI Sentiment Analysis**
