@@ -76,5 +76,5 @@ This project is **open-source** and available under the **MIT License**.
 ### ⭐ **Show some love!**
 If you like this project, don't forget to give it a ⭐ on GitHub!
 
-🔗 Connect with us: [LinkedIn](https://linkedin.com) | [Twitter](https://twitter.com)
+🔗**Connect With Us:** [LinkedIn](https://www.linkedin.com/company/bhel/) | [Twitter](https://x.com/BHEL_India)
 
