@@ -30,18 +30,18 @@ Gain deep insights with interactive visualizations! Our platform generates bar c
 Export sentiment analysis results and engagement metrics into CSV files. This feature allows businesses to maintain records, conduct in-depth studies, and use the data for future strategies and reporting.
 
 ## 🛠 Installation Guide
-### 1️⃣ **Clone the Repository**
+**1. Clone the Repository**
 ```bash
    git clone https://github.com/your-repo/BHEL-Sentiment-Analysis.git
    cd BHEL-Sentiment-Analysis
 ```
 
-### 2️⃣ **Install Dependencies**
+**2. Install Dependencies**
 ```bash
    pip install -r requirements.txt
 ```
 
-### 3️⃣ **Run the Application**
+**3. Run the Application**
 ```bash
    streamlit run app.py
 ```
