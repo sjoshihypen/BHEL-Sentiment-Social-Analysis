@@ -16,7 +16,7 @@ Automatically collect Different Social Media Platforms posts related to BHEL and
 
 **3. 💬 Extract Comments & Perform Sentiment Analysis**
 
-Our AI-powered tool scans post comments to determine sentiment—positive, neutral, or negative. This analysis helps identify public opinion and provides insights into the brand’s reputation and user engagement levels.
+Our AI-powered tool scans post comments to determine sentiment—**Positive**, **Neutral**, or **Negative**. This analysis helps identify public opinion and provides insights into the brand’s reputation and user engagement levels.
 
 **4. 📊 Engagement Statistics & Sentiment Breakdown**
 
