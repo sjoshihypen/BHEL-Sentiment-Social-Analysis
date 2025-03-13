@@ -77,6 +77,15 @@ This project is **open-source** and available under the **MIT License**.
 If you like this project, don't forget to give it a ⭐ on GitHub!
 
 🔗**Connect With Us:** 
-![image](https://github.com/user-attachments/assets/79bf3d61-f09e-44f4-a68a-b56407f4347d) [LinkedIn] https://www.linkedin.com/company/bhel/) | 
-[Twitter](https://x.com/BHEL_India)
+<a href="https://www.linkedin.com/company/bhel/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"/>
+        LinkedIn
+    </a>  
+    &nbsp;&nbsp;
+    <a href="https://x.com/BHEL_India" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023.svg" width="20"/>
+        X (Twitter)
+    </a>
+    """,
+    unsafe_allow_html=True
 
