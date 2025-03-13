@@ -56,10 +56,10 @@ Export sentiment analysis results and engagement metrics into CSV files. This fe
 - MySQL is used to manage user registration and login.
 
 ## Tech Stack
-- **Python** 🐍
-- **Streamlit** 🌐
-- **SQLite** 🗃️ (Visitor Count)
-- **MySQL** 🛢️ (User Authentication)
+- **Python + Streamlit**
+- **MySQL Database**
+- **NLP & AI Sentiment Analysis**
+- **Data Visualization (Matplotlib, Seaborn, Plotly)**
 
 ## 🤝 Contributing
 We welcome contributions! If you’d like to contribute:
