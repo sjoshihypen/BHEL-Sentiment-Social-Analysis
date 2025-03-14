@@ -161,3 +161,11 @@ if valid_images:
             time.sleep(5)
 else:
     st.error("🚨 No valid images found!")
+
+st.markdown("""
+    <div style="text-align: center;">
+        <strong>© 2025 BHEL Social Sentiment Analysis. All rights reserved.</strong><br>
+        <strong>Unauthorized use or duplication is strictly prohibited.</strong><br>
+        <strong>Developed by : Sushant Joshi & Intern BHEL.</strong>
+    </div>
+""", unsafe_allow_html=True)
