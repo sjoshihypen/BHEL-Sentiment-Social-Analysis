@@ -31,28 +31,28 @@ Gain deep insights with interactive visualizations! Our platform generates bar c
 Export sentiment analysis results and engagement metrics into CSV files. This feature allows businesses to maintain records, conduct in-depth studies, and use the data for future strategies and reporting.
 
 ## 📷 Snapshots 
-**🏡 Home Page**
+## 🏡 Home Page
 
 ![BHEL Sentiment Analysis](./Images/Home.png)
 
 
-**1. Facebook Sentiment Module**
+## 1. Facebook Sentiment Module
 
 ![BHEL Sentiment Analysis](./Images/Facebook.jpg)
 
-**2. Instagram Sentiment Module**
+## 2. Instagram Sentiment Module
 
 ![BHEL Sentiment Analysis](./Images/Instagram.jpg)
 
-**3. LinkedIn Sentiment Module**
+## 3. LinkedIn Sentiment Module
 
 ![BHEL Sentiment Analysis](./Images/LinkedIn.jpg)
 
-**4. X Sentiment Module**
+## 4. X Sentiment Module
 
 ![BHEL Sentiment Analysis](./Images/X.jpg)
 
-**5. Youtube Sentiment Module**
+## 5. Youtube Sentiment Module
 
 ![BHEL Sentiment Analysis](./Images/Youtube.jpg)
 
