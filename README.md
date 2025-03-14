@@ -41,20 +41,19 @@ Export sentiment analysis results and engagement metrics into CSV files. This fe
 
 **2. Instagram Sentiment Module**
 
-
+![BHEL Sentiment Analysis](./Images/Instagram.jpg)
 
 **3. LinkedIn Sentiment Module**
 
-
+![BHEL Sentiment Analysis](./Images/LinkedIn.jpg)
 
 **4. X Sentiment Module**
 
-
-
+![BHEL Sentiment Analysis](./Images/X.jpg)
 
 **5. Youtube Sentiment Module**
 
-
+![BHEL Sentiment Analysis](./Images/Youtube.jpg)
 
 
 ##  🛠 Installation Guide 
