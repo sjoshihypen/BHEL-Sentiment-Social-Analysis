@@ -36,7 +36,8 @@ Export sentiment analysis results and engagement metrics into CSV files. This fe
 
 
 **1. Facebook Sentiment Module**
-D:/BHEL Sentiment Social Analysis/Images/Facebook.jpg
+
+(./Images/Facebook.jpg)
 
 **2. Instagram Sentiment Module**
 
