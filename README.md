@@ -31,6 +31,7 @@ Gain deep insights with interactive visualizations! Our platform generates bar c
 Export sentiment analysis results and engagement metrics into CSV files. This feature allows businesses to maintain records, conduct in-depth studies, and use the data for future strategies and reporting.
 
 ## 📷 Snapshots 
+
 ## 🏡 Home Page
 
 ![BHEL Sentiment Analysis](./Images/Home.png)
@@ -89,7 +90,7 @@ Export sentiment analysis results and engagement metrics into CSV files. This fe
 - **NLP & AI Sentiment Analysis**
 - **Data Visualization (Matplotlib, Seaborn, Plotly)**
 
-## 🤝 Contributing
+## 🤝 Collaboration 
 We welcome contributions! If you’d like to contribute:
 
 **1. Fork the repository**
