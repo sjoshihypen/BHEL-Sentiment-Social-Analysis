@@ -57,6 +57,9 @@ Export sentiment analysis results and engagement metrics into CSV files. This fe
 
 ![BHEL Sentiment Analysis](./Images/Youtube.jpg)
 
+## News Sections 
+
+![BHEL Sentiment Analysis](./Images/News.jpg)
 
 ##  🛠 Installation Guide 
 **1. Clone the Repository**
