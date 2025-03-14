@@ -30,6 +30,33 @@ Gain deep insights with interactive visualizations! Our platform generates bar c
 
 Export sentiment analysis results and engagement metrics into CSV files. This feature allows businesses to maintain records, conduct in-depth studies, and use the data for future strategies and reporting.
 
+## 📷 Snapshots 
+**🏡 Home Page**
+
+![image](https://github.com/user-attachments/assets/a85982d6-421c-4cde-8cbd-075dfee60526)
+
+**1. Facebook Sentiment**
+
+![image](https://github.com/user-attachments/assets/dacecc0d-4e5a-4b83-b4e3-c4947dadc66e)
+
+**2. Instagram Sentiment**
+
+![image](https://github.com/user-attachments/assets/f715d8b8-9d7f-4889-bb20-6b312dc00819)
+
+**3. LinkedIn Sentiment**
+
+![image](https://github.com/user-attachments/assets/aeb09ea0-7861-4b6d-b3cc-0cc0dff3e93d)
+
+**4. X Sentiment**
+
+![image](https://github.com/user-attachments/assets/4243ae60-a36d-4c67-ab75-da534d9b67f6)
+
+
+**5. Youtube Sentiment**
+
+![image](https://github.com/user-attachments/assets/59905187-f52f-4e40-ac2d-044b5e80bae6)
+
+
 ##  🛠 Installation Guide 
 **1. Clone the Repository**
 ```bash
