@@ -278,3 +278,11 @@ if analyze_clicked:
                 st.warning("⚠️ No videos found in the selected time frame!")
         else:
             st.error("❌ Could not extract Channel ID! Please check your URL.")
+
+st.markdown("""
+    <div style="text-align: center;">
+        <strong>© 2025 BHEL Social Sentiment Analysis. All rights reserved.</strong><br>
+        <strong>Unauthorized use or duplication is strictly prohibited.</strong><br>
+        <strong>Developed by : Sushant Joshi & Intern BHEL.</strong>
+    </div>
+""", unsafe_allow_html=True)
