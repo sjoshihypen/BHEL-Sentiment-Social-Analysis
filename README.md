@@ -33,7 +33,7 @@ Export sentiment analysis results and engagement metrics into CSV files. This fe
 ## 📷 Snapshots 
 **🏡 Home Page**
 
-![image](https://github.com/user-attachments/assets/a85982d6-421c-4cde-8cbd-075dfee60526)
+https://github.com/user-attachments/assets/a85982d6-421c-4cde-8cbd-075dfee60526
 
 **1. Facebook Sentiment Module**
 
