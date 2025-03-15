@@ -119,7 +119,7 @@ If you like this project, don't forget to give it a ⭐ on GitHub!
     &nbsp;&nbsp;
     
 <a href="https://www.instagram.com/bhel.india/?hl=en">
-        <img src="https://github.com/user-attachments/assets/e43e1be8-6e79-41d0-bea7-1b8f68c58424" width="20"/>
+        <img src=./Images/Instagram_logo.jpg width="20"/>
         Instagram
     </a>  
     &nbsp;&nbsp;
