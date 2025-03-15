@@ -132,7 +132,7 @@ If you like this project, don't forget to give it a ⭐ on GitHub!
    
 
 <a href="https://x.com/BHEL_India" target="_blank">
-        <img src="https://github.com/user-attachments/assets/095c9840-6d00-4750-b82a-a0f6c6019b96" width="20"/>
+        <img src=![BHEL Sentiment Analysis](./Images/X_logo.jpg) width="20"/>
         X
     </a>
     &nbsp;&nbsp;
