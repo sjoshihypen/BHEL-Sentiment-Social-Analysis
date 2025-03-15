@@ -107,7 +107,7 @@ We welcome contributions! If you’d like to contribute:
 ## 📄 License
 BHEL Social Sentiment Analysis is an **open-source** Streamlit web application under the **MIT License**. It helps users analyze **Different Social Media Platforms** posts, videos comments about **Bharat Heavy Electricals Limited (BHEL)** with secure authentication, sentiment analysis, and engagement tracking.
 
-### ❤️ **Shower Love & Support **
+### ❤️ Shower Love & Support
 If you like this project, don't forget to give it a ⭐ on GitHub!
 
 🔗**Connect With Us:** 
