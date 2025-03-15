@@ -132,7 +132,7 @@ If you like this project, don't forget to give it a ⭐ on GitHub!
    
 
 <a href="https://x.com/BHEL_India" target="_blank">
-        <img src=(./Images/X_logo.jpg) width="20"/>
+        <img src=./Images/X_logo.jpg width="20"/>
         X
     </a>
     &nbsp;&nbsp;
