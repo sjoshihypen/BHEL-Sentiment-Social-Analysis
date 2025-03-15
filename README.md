@@ -139,7 +139,7 @@ If you like this project, don't forget to give it a ⭐ on GitHub!
 
 
 <a href="https://www.youtube.com/@bhel_india8535/featured" target="_blank">
-        <img src="https://github.com/user-attachments/assets/a66418e1-ef7b-4a77-90bb-45866fd321d5" width="20"/>
+        <img src=./Images/youtube_logo.jpg width="20"/>
         YouTube
     </a>
 
