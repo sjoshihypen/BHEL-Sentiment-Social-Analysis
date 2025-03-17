@@ -1,26 +1,50 @@
 import streamlit as st
 import re
 import os
+import base64
 import numpy as np
 import matplotlib.pyplot as plt
 
 # Set Streamlit page configuration
-st.set_page_config(page_title="Facebook Sentiment Analysis", layout="wide")
+st.set_page_config(page_title="BHEL: Social Sentiment Analysis", layout="wide")
 
+# ============================ INLINE IMAGE ENCODING ============================ #
+def get_image_base64(image_path):
+    with open(image_path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode()
+
+# Path to the uploaded image
+image_path = "D:/BHEL Sentiment Social Analysis/Images/bhel.png"  # Ensure correct path
+image_base64 = get_image_base64(image_path) if os.path.exists(image_path) else None
+
+# ============================ HEADER SECTION ============================ #
+st.markdown(
+    f"""
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h1>BHEL: Social Sentiment Analysis</h1>
+        {'<img src="data:image/png;base64,' + image_base64 + '" style="width: 200px; height: 120px;">' if image_base64 else ''}
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+st.write("  ")
+st.write("  ")
+
+# ============================ SIDEBAR FEATURES ============================ #
 with st.sidebar:
-        st.title(f"Key Features:")
-        st.write(
-            """
-            ✅ **Secure Authentication (Stored in Streamlit Secrets).**\n
-            ✅ **Scrape Facebooks Posts,Videos.**\n
-            ✅ **Extract Comments & Perform Sentiment Analysis.**\n
-            ✅ **Engagement Statistics & Sentiment Breakdown.**\n
-            ✅ **Visualizations with Graphs & Charts.**\n
-            ✅ **Downloadable CSV Reports.**\n
-     """)
-st.write("\n\n")
-
-
+    st.title("Key Features:")
+    st.write(
+        """
+        ✅ **Secure Authentication (Stored in Streamlit Secrets).**\n
+        ✅ **Scrape Facebook Posts, Videos.**\n
+        ✅ **Extract Comments & Perform Sentiment Analysis.**\n
+        ✅ **Engagement Statistics & Sentiment Breakdown.**\n
+        ✅ **Visualizations with Graphs & Charts.**\n
+        ✅ **Downloadable CSV Reports.**\n
+        """
+    )
+    
 # Custom CSS for styling
 st.markdown(
     """
@@ -44,31 +68,17 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Path to the logo image
-image_path = "D:/BHEL/Images/bhel.jpg"
-
-# Title and Logo Display
-st.markdown("<br>", unsafe_allow_html=True)  # Spacing
-col1, col2 = st.columns([4, 1])
-with col1:
-    st.title("BHEL: Facebook Sentiment Analysis")
-with col2:
-    if os.path.exists(image_path):
-        st.image(image_path, caption="BHEL Vision", use_container_width=True)
-    else:
-        st.error("🚨 Image Not Found: BHEL logo")
-
-# Function to validate Facebook URL (Fix for public pages & profiles)
+# Function to validate Facebook URL
 def is_valid_facebook_url(url):
     fb_pattern = r"^(https?:\/\/)?(www\.)?facebook\.com\/[a-zA-Z0-9._-]+(\/)?$"
     return bool(re.match(fb_pattern, url))
 
-# Initialize Session State for user selections
+# Initialize session state for analysis duration
 if "analysis_duration" not in st.session_state:
     st.session_state.analysis_duration = "Weekly (7 Days)"
 
-# URL Input Field with Proper Alignment
-col1, col2 = st.columns([1, 2])  # Adjust column width for alignment
+# URL Input Field
+col1, col2 = st.columns([1, 2])  
 with col1:
     st.markdown("<b>Enter / Paste Facebook Profile URL:</b>", unsafe_allow_html=True)
 with col2:
@@ -83,7 +93,6 @@ selected_duration = st.radio(
     horizontal=True
 )
 
-# Update session state when duration changes
 if selected_duration != st.session_state.analysis_duration:
     st.session_state.analysis_duration = selected_duration
 
@@ -102,7 +111,7 @@ if analyze_clicked:
     else:
         st.success(f"✅ Analysis for {st.session_state.analysis_duration} has started!")
 
-        # Simulating sentiment analysis (Replace with actual API or Model)
+        # Simulating sentiment analysis
         np.random.seed(42)
         positive_comments = np.random.randint(50, 200)
         neutral_comments = np.random.randint(20, 100)
@@ -116,15 +125,14 @@ if analyze_clicked:
                 st.markdown(f"**Positive Comments ✅ :** {positive_comments}")
                 st.markdown(f"**Neutral  Comments 😐 :** {neutral_comments}")
                 st.markdown(f"**Negative Comments ❌ :** {negative_comments}")
-                st.markdown("**Total Posts / Videos:** _Coming Soon_")  # Placeholder for total posts
+                st.markdown("**Total Posts / Videos:** _Coming Soon_")
 
             with col2:
-                # Doughnut Chart for Sentiment Distribution
                 labels = ["Positive", "Neutral", "Negative"]
                 sizes = [positive_comments, neutral_comments, negative_comments]
                 colors = ["green", "yellow", "red"]
 
-                fig, ax = plt.subplots(figsize=(3.5, 3.5))  # Adjust figure size
+                fig, ax = plt.subplots(figsize=(3.5, 3.5))
                 wedges, texts, autotexts = ax.pie(
                     sizes,
                     labels=labels,
@@ -135,16 +143,15 @@ if analyze_clicked:
                     textprops={"fontsize": 10, "weight": "bold"}
                 )
 
-                # Draw a white circle in the center to create a doughnut chart
                 center_circle = plt.Circle((0, 0), 0.70, fc="white")
                 fig.gca().add_artist(center_circle)
 
-                # Display the chart
                 st.pyplot(fig)
+
 st.markdown("""
     <div style="text-align: center;">
         <strong>© 2025 BHEL Social Sentiment Analysis. All rights reserved.</strong><br>
         <strong>Unauthorized use or duplication is strictly prohibited.</strong><br>
-        <strong>Developed by : Sushant Joshi & Intern BHEL.</strong>
+        <strong>Developed by: Sushant Joshi & Intern BHEL.</strong>
     </div>
 """, unsafe_allow_html=True)
