@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Set Streamlit page configuration
-st.set_page_config(page_title="BHEL: Social Sentiment Analysis", layout="wide")
+st.set_page_config(page_title="BHEL: Facebook Sentiment Analysis", layout="wide")
 
 # ============================ INLINE IMAGE ENCODING ============================ #
 def get_image_base64(image_path):
