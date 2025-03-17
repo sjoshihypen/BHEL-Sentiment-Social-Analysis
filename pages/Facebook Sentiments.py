@@ -21,7 +21,7 @@ image_base64 = get_image_base64(image_path) if os.path.exists(image_path) else N
 st.markdown(
     f"""
     <div style="display: flex; justify-content: space-between; align-items: center;">
-        <h1>BHEL: Social Sentiment Analysis</h1>
+        <h1>BHEL: Facebook Sentiment Analysis</h1>
         {'<img src="data:image/png;base64,' + image_base64 + '" style="width: 200px; height: 120px;">' if image_base64 else ''}
     </div>
     """,
