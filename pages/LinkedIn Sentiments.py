@@ -8,7 +8,7 @@ import requests
 import json
 
 # Set Streamlit page configuration
-st.set_page_config(page_title="LinkedIn Sentiment Analysis", layout="wide")
+st.set_page_config(page_title="BHEL: LinkedIn Sentiment Analysis", layout="wide")
 
 # LinkedIn API Credentials (Replace with actual credentials)
 CLIENT_ID = "your_linkedin_client_id"
