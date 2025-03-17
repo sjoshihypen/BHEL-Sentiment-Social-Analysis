@@ -15,7 +15,7 @@ YOUTUBE_API_KEY = "AIzaSyDRJnYZ920R2Xr71GLoaWCbZ14u3xF0arg"
 youtube = build("youtube", "v3", developerKey=YOUTUBE_API_KEY)
 
 # Streamlit Configuration
-st.set_page_config(page_title="YouTube Sentiment Analysis", layout="wide")
+st.set_page_config(page_title="BHEL: YouTube Sentiment Analysis", layout="wide")
 
 # ============================ INLINE IMAGE ENCODING ============================ #
 def get_image_base64(image_path):
