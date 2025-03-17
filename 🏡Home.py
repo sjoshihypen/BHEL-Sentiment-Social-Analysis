@@ -84,6 +84,14 @@ image_list = [
 ]
 
 image_placeholder = st.empty()
+# ============================ FOOTER ============================ #
+st.markdown("""
+    <div style="text-align: center;">
+        <strong>© 2025 BHEL Social Sentiment Analysis. All rights reserved.</strong><br>
+        <strong>Unauthorized use or duplication is strictly prohibited.</strong><br>
+        <strong>Developed by: Sushant Joshi & Intern BHEL.</strong>
+    </div>
+""", unsafe_allow_html=True)
 
 # Initialize session state for slideshow control
 if "slideshow_running" not in st.session_state:
@@ -100,12 +108,3 @@ if valid_images:
             time.sleep(5)
 else:
     st.error("🚨 No valid images found!")
-
-# ============================ FOOTER ============================ #
-st.markdown("""
-    <div style="text-align: center;">
-        <strong>© 2025 BHEL Social Sentiment Analysis. All rights reserved.</strong><br>
-        <strong>Unauthorized use or duplication is strictly prohibited.</strong><br>
-        <strong>Developed by: Sushant Joshi & Intern BHEL.</strong>
-    </div>
-""", unsafe_allow_html=True)
