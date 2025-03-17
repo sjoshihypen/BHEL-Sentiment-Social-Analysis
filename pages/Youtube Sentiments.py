@@ -1,6 +1,7 @@
 import streamlit as st
 import re
 import os 
+import base64
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -16,6 +17,30 @@ youtube = build("youtube", "v3", developerKey=YOUTUBE_API_KEY)
 # Streamlit Configuration
 st.set_page_config(page_title="YouTube Sentiment Analysis", layout="wide")
 
+# ============================ INLINE IMAGE ENCODING ============================ #
+def get_image_base64(image_path):
+    with open(image_path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode()
+
+# Path to the uploaded image
+image_path = "D:/BHEL Sentiment Social Analysis/Images/bhel.png"  # Ensure correct path
+image_base64 = get_image_base64(image_path) if os.path.exists(image_path) else None
+
+# ============================ HEADER SECTION ============================ #
+st.markdown(
+    f"""
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h1>BHEL: Social Sentiment Analysis</h1>
+        {'<img src="data:image/png;base64,' + image_base64 + '" style="width: 200px; height: 120px;">' if image_base64 else ''}
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+st.write("  ")
+st.write("  ")
+
+
 # Sidebar Features
 with st.sidebar:
     st.title("Key Features:")
@@ -29,6 +54,7 @@ with st.sidebar:
         ✅ **Visualizations with Graphs & Charts.**\n
         """
     )
+
 # Custom CSS for styling
 st.markdown(
     """
@@ -51,20 +77,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
-# Path to the logo image
-image_path = "D:/BHEL/Images/bhel.jpg"
-
-# Title and Logo Display
-st.markdown("<br>", unsafe_allow_html=True)  # Spacing
-col1, col2 = st.columns([4, 1])
-with col1:
-    st.title("BHEL: YouTube Sentiment Analysis")
-with col2:
-    if os.path.exists(image_path):
-        st.image(image_path, caption="BHEL Vision", use_container_width=True)
-    else:
-        st.error("🚨 Image Not Found: BHEL logo")
 
 # Function to validate YouTube URL
 def is_valid_youtube_url(url):
@@ -279,10 +291,11 @@ if analyze_clicked:
         else:
             st.error("❌ Could not extract Channel ID! Please check your URL.")
 
+st.markdown("<br><br><br>", unsafe_allow_html=True)
 st.markdown("""
     <div style="text-align: center;">
         <strong>© 2025 BHEL Social Sentiment Analysis. All rights reserved.</strong><br>
         <strong>Unauthorized use or duplication is strictly prohibited.</strong><br>
-        <strong>Developed by : Sushant Joshi & Intern BHEL.</strong>
+        <strong>Developed by : Sushant Joshi, Intern BHEL.</strong>
     </div>
 """, unsafe_allow_html=True)
