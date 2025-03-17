@@ -1,11 +1,35 @@
 import streamlit as st
 import re
 import os
+import base64
 import numpy as np
 import matplotlib.pyplot as plt
 
 # Set Streamlit page configuration
 st.set_page_config(page_title="Instagram Sentiment Analysis", layout="wide")
+
+# ============================ INLINE IMAGE ENCODING ============================ #
+def get_image_base64(image_path):
+    with open(image_path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode()
+
+# Path to the uploaded image
+image_path = "D:/BHEL Sentiment Social Analysis/Images/bhel.png"  # Ensure correct path
+image_base64 = get_image_base64(image_path) if os.path.exists(image_path) else None
+
+# ============================ HEADER SECTION ============================ #
+st.markdown(
+    f"""
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h1>BHEL: Social Sentiment Analysis</h1>
+        {'<img src="data:image/png;base64,' + image_base64 + '" style="width: 200px; height: 120px;">' if image_base64 else ''}
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+st.write("  ")
+st.write("  ")
 
 with st.sidebar:
         st.title(f"Key Features:")
@@ -42,20 +66,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
-# Path to the logo image
-image_path = "D:/BHEL/Images/bhel.jpg"
-
-# Title and Logo Display
-st.markdown("<br>", unsafe_allow_html=True)  # Spacing
-col1, col2 = st.columns([4, 1])
-with col1:
-    st.title("BHEL: Instagram Sentiment Analysis")
-with col2:
-    if os.path.exists(image_path):
-        st.image(image_path, caption="BHEL Vision", use_container_width=True)
-    else:
-        st.warning("🚨 Image Not Found: BHEL logo. Please check the file path.")
 
 # Function to validate Instagram URL
 def is_valid_instagram_url(url):
@@ -143,11 +153,12 @@ if analyze_clicked:
 
                 # Display the chart
                 st.pyplot(fig)
+st.markdown("<br><br><br>", unsafe_allow_html=True)
 
 st.markdown("""
     <div style="text-align: center;">
         <strong>© 2025 BHEL Social Sentiment Analysis. All rights reserved.</strong><br>
         <strong>Unauthorized use or duplication is strictly prohibited.</strong><br>
-        <strong>Developed by : Sushant Joshi & Intern BHEL.</strong>
+        <strong>Developed by : Sushant Joshi, Intern BHEL.</strong>
     </div>
 """, unsafe_allow_html=True)
