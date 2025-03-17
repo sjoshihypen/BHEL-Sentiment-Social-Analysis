@@ -1,11 +1,47 @@
 import streamlit as st
 import re
 import os
+import base64
+import tweepy
 import numpy as np
 import matplotlib.pyplot as plt
 
 # Set Streamlit page configuration
 st.set_page_config(page_title="X Sentiment Analysis", layout="wide")
+
+# ============================ INLINE IMAGE ENCODING ============================ #
+def get_image_base64(image_path):
+    with open(image_path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode()
+
+# Path to the uploaded image
+image_path = "D:/BHEL Sentiment Social Analysis/Images/bhel.png"  # Ensure correct path
+image_base64 = get_image_base64(image_path) if os.path.exists(image_path) else None
+
+# ============================ HEADER SECTION ============================ #
+st.markdown(
+    f"""
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h1>BHEL: Social Sentiment Analysis</h1>
+        {'<img src="data:image/png;base64,' + image_base64 + '" style="width: 200px; height: 120px;">' if image_base64 else ''}
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+st.write("  ")
+st.write("  ")
+
+# API Credentials (Store in Streamlit Secrets for Security)
+API_KEY = st.secrets["TWITTER"]["TWITTER_API_KEY"]
+API_SECRET = st.secrets["TWITTER"]["TWITTER_API_SECRET"]
+ACCESS_TOKEN = st.secrets["TWITTER"]["TWITTER_ACCESS_TOKEN"]
+ACCESS_SECRET = st.secrets["TWITTER"]["TWITTER_ACCESS_SECRET"]
+
+# Authenticate with Twitter API
+auth = tweepy.OAuthHandler(API_KEY, API_SECRET)
+auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
+api = tweepy.API(auth, wait_on_rate_limit=True)
 
 with st.sidebar:
         st.title(f"Key Features:")
@@ -43,24 +79,30 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Path to the logo image
-image_path = "D:/BHEL/Images/bhel.jpg"
-
-# Title and Logo Display
-st.markdown("<br>", unsafe_allow_html=True)  # Spacing
-col1, col2 = st.columns([4, 1])
-with col1:
-    st.title("BHEL: X Sentiment Analysis")
-with col2:
-    if os.path.exists(image_path):
-        st.image(image_path, caption="BHEL Vision", use_container_width=True)
-    else:
-        st.error("🚨 Image Not Found: BHEL logo")
-
 # Function to validate X URL
 def is_valid_x_url(url):
     x_pattern = r"^(https?:\/\/)?(www\.)?x\.com\/[A-Za-z0-9_]+$"
     return bool(re.match(x_pattern, url))
+
+# Fetch X Posts and Media
+def fetch_x_posts(username, count=20):
+    try:
+        tweets = api.user_timeline(screen_name=username, count=count, tweet_mode="extended")
+        posts = []
+        for tweet in tweets:
+            media_urls = []
+            if 'media' in tweet.entities:
+                media_urls = [media['media_url'] for media in tweet.entities['media']]
+            posts.append({
+                "text": tweet.full_text,
+                "likes": tweet.favorite_count,
+                "retweets": tweet.retweet_count,
+                "media": media_urls
+            })
+        return posts
+    except Exception as e:
+        st.error(f"Error fetching posts: {e}")
+        return []
 
 # Initialize Session State for user selections
 if "analysis_duration" not in st.session_state:
